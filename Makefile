@@ -116,7 +116,7 @@ ifeq ($(UNAME_M),$(filter $(UNAME_M),x86_64 i686))
 		NONECFLAGS +=
 # -mno-sse3
 		SIMPLECFLAGS += -mavx -msse3
-		FULLCFLAGS += -mavx2 -msse3 -mfma -mf16c -mavx
+		FULLCFLAGS +=-msse3 -mf16c -mavx
 	else
 # if not on windows, they are clearly building it themselves, so lets just use whatever is supported
 		CFLAGS += -march=native -mtune=native

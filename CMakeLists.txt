@@ -61,11 +61,11 @@ option(MAKE_MISC_FILES              "MAKE_MISC_FILES, llama: build examples"    
 
 # instruction set specific
 option(LLAMA_AVX                        "llama: enable AVX"                                     ON)
-option(LLAMA_AVX2                       "llama: enable AVX2"                                    ON)
+option(LLAMA_AVX2                       "llama: enable AVX2"                                    OFF)
 option(LLAMA_AVX512                     "llama: enable AVX512"                                  OFF)
 option(LLAMA_AVX512_VBMI                "llama: enable AVX512-VBMI"                             OFF)
 option(LLAMA_AVX512_VNNI                "llama: enable AVX512-VNNI"                             OFF)
-option(LLAMA_FMA                        "llama: enable FMA"                                     ON)
+option(LLAMA_FMA                        "llama: enable FMA"                                     OFF)
 # in MSVC F16C is implied with AVX2/AVX512
 if (NOT MSVC)
     option(LLAMA_F16C                   "llama: enable F16C"                                    ON)
